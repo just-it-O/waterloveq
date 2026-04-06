@@ -208,7 +208,8 @@
 const nameFromStorage = localStorage.getItem('leaveData') ? JSON.parse(localStorage.getItem('leaveData')).name : '';
 document.getElementById('studentName').textContent = nameFromStorage + '的请假';
 document.querySelector('.wfTitle___Y-ebx span').textContent = nameFromStorage + '的请假';
-        document.getElementById('studentNameField').textContent = data.studentName;
+        document.getElementById('studentNameField').textContent = data.studentName + '(' + data.studentID + ')';
+
         document.getElementById('studentIDField').textContent = data.studentID;
         document.getElementById('studentGenderField').textContent = data.studentGender;
         document.getElementById('studentCollegeField').textContent = data.studentCollege;
